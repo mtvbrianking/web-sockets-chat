@@ -18,8 +18,15 @@ app.use(express.static('public'));
 var io = socket(server);
 
 io.on('connection', function(socket) {
+	
 	console.log(socket.id+' -> connected');
-	socket.on('disconnect', function(){
+
+	// Retransmit chat message
+	socket.on('chat', function(data) {
+		io.sockets.emit('chat', data);
+	});
+
+	socket.on('disconnect', function() {
     	console.log(socket.id+' -> disconnected');
   	});
 });
