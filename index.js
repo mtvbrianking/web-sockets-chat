@@ -21,6 +21,11 @@ io.on('connection', function(socket) {
 	
 	console.log(socket.id+' -> connected');
 
+	// Listening to typing
+	socket.on('typing', function(handle) {
+		socket.broadcast.emit('typing', handle);
+	});
+
 	// Retransmit chat message
 	socket.on('chat', function(data) {
 		io.sockets.emit('chat', data);
