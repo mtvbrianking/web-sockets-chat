@@ -1,0 +1,25 @@
+{
+  "name": "web-sockets-chat",
+  "version": "1.0.0",
+  "description": "A chat app using WebSockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/bmatovu/web-sockets-chat#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmatovu/web-sockets-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmatovu/web-sockets-chat/issues"
+  },
+  "author": "bmatovu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
