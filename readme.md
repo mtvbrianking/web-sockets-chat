@@ -6,6 +6,8 @@ web-sockets-chat$ npm init
 
 web-sockets-chat$ npm install express --save
 
+web-sockets-chat$ npm install socket.io --save
+
 https://stackoverflow.com/a/46505438/2732184
 web-sockets-chat$ npm install nodemon --global
 
