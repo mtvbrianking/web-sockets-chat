@@ -17,3 +17,19 @@
 Serve app
 
 `web-sockets-chat$ nodemon index`
+
+Access at...
+
+[http://localhost:4000/](http://localhost:4000/)
+
+...................................................
+
+PHP Emitter
+
+`composer require predis`
+
+`npm install redis --save`
+
+Run emitter script...
+
+`php emitter.php`
